@@ -7,7 +7,7 @@ error_reporting(E_STRICT | E_ALL);
 $authorize_url = "https://developer.api.autodesk.com/authentication/v1/authorize";
 $gettoken_url = "https://developer.api.autodesk.com/authentication/v1/gettoken";
 $refreshtoken_url = "https://developer.api.autodesk.com/authentication/v1/refreshtoken";
-$scope="data:read";
+$scope="data:read viewables:read";
 $response_type="code";
 $grant_type="authorization_code";
 
@@ -142,7 +142,7 @@ if ($mode == "refresh") {
         break;
     }
     $resp = parse_http_response($buff);
-    $code = $resp["code"];
+    $code = $resp['code'];
     $data = "client_id=".$FORGE_CLIENT_ID."&client_secret=".$FORGE_CLIENT_SECRET."&grant_type=".$grant_type."&code=".$code."&redirect_uri=".$FORGE_CALLBACK_URL;
     $response = http_post($gettoken_url, $data);
     file_put_contents($tokenfile, $response);
