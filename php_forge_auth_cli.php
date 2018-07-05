@@ -7,7 +7,7 @@ error_reporting(E_STRICT | E_ALL);
 $authorize_url = "https://developer.api.autodesk.com/authentication/v1/authorize";
 $gettoken_url = "https://developer.api.autodesk.com/authentication/v1/gettoken";
 $refreshtoken_url = "https://developer.api.autodesk.com/authentication/v1/refreshtoken";
-$scope="data:read viewables:read";
+$scope="data:read viewables:read data:search";
 $response_type="code";
 $grant_type="authorization_code";
 
