@@ -4,8 +4,8 @@ OAuth 3-legged automation for access to the Forge platform via the CLI
 autodesk-cli-auth-tool.php is used to 3-legged auth and re-auth against Forge generating tokens for access to A360/Fusion Team/BIM360 Team files.
 
 There are two usage paradigms:
-    1. Initial authentication opening the browser and allowing the user to authorize their account and get a token with an expiration time.
-    1. Refresh authentication allowing the token to be refreshed before the expiration time.
+1. Initial authentication opening the browser and allowing the user to authorize their account and get a token with an expiration time.
+2. Refresh authentication allowing the token to be refreshed before the expiration time.
 
 **Note: If authentication is not refreshed before the token expires, then initial authentication is required 
 
