@@ -13,7 +13,7 @@ $grant_type="authorization_code";
 
 
 //Describe command line usage
-$usage = "php_forge_auth_cli.php is used to 3-legged auth and re-auth against Forge generating tokens for access to A360/Fusion Team/BIM360 Team files.
+$usage = "autodesk-cli-auth-tool.php is used to 3-legged auth and re-auth against Forge generating tokens for access to A360/Fusion Team/BIM360 Team files.
 There are two usage paradigms:
     1) Initial authentication opening the browser and allowing the user to authorize their account and get a token with an expiration time.
     2) Refresh authentication allowing the token to be refreshed before the expiration time.
@@ -25,8 +25,8 @@ Usage: php auth.php [OPTIONS]
     -k --keyfile=<file path to the location of a file with your Forge client id and secret>
     
 Examples:
-    Initial: php php_forge_auth_cli.php --mode=initial --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"
-    Refresh: php php_forge_auth_cli.php --mode=refresh --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"
+    Initial: php autodesk-cli-auth-tool.php --mode=initial --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"
+    Refresh: php autodesk-cli-auth-tool.php --mode=refresh --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"
 
 Key File:
     The Key File format should be a plain-text file with the name of the variable followed by its value in the file separated by an equals sign (e.g. NAME=value):
