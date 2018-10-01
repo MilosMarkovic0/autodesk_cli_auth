@@ -17,9 +17,10 @@ There are two usage paradigms:
     -k --keyfile=<file path to the location of a file with your Forge client id and secret>`
     
 ## Examples:
-    * _Initial:_ `php autodesk-cli-auth-tool.php --mode=initial --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
 
-    * _Refresh:_ `php autodesk-cli-auth-tool.php --mode=refresh --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
+* _Initial:_ `php autodesk-cli-auth-tool.php --mode=initial --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
+
+* _Refresh:_ `php autodesk-cli-auth-tool.php --mode=refresh --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
 
 ## Key File:
     
