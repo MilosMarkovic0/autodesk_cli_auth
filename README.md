@@ -11,23 +11,22 @@ There are two usage paradigms:
 
 ## Usage: 
 
-`php autodesk-cli-auth-tool.php [OPTIONS]
+```
+php autodesk-cli-auth-tool.php [OPTIONS]
     -m --mode=[initial|refresh]
     -t --tokenfile=<file path to store the current token and expiry>
-    -k --keyfile=<file path to the location of a file with your Forge client id and secret>`
+    -k --keyfile=<file path to the location of a file with your Forge client id and secret>
+```
     
 ## Examples:
-
-* _Initial:_ `php autodesk-cli-auth-tool.php --mode=initial --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
-
-* _Refresh:_ `php autodesk-cli-auth-tool.php --mode=refresh --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
+* __Initial:__ `php autodesk-cli-auth-tool.php --mode=initial --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
+* __Refresh:__ `php autodesk-cli-auth-tool.php --mode=refresh --tokenfile=\"temp.txt\" --keyfile=\"keyfile.txt\"`
 
 ## Key File:
-    
-    The Key File format should be a plain-text file with the name of the variable followed by its value in the file separated by an equals sign (e.g. NAME=value):
-    
-    FORGE_CLIENT_ID
-    
+
+The Key File format should be a plain-text file with the name of the variable followed by its value in the file separated by an equals sign (e.g. NAME=value):
+```
+    FORGE_CLIENT_ID 
     FORGE_CLIENT_SECRET
-    
     FORGE_CALLBACK_URL
+```
